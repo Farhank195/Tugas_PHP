@@ -22,12 +22,16 @@
 </head>
 <body>
     <div class="container-fluid  p-0">
+        <!-- Header -->
         <div class="col-md-12 bg-info text-white" style="--bs-bg-opacity: .4;">
             <h1>FORM BELANJA</h1>
         </div>
+        <!-- Header -->
+
 
         <div class="row">
             <div class="col-md-8">
+                <!-- form -->
                 <div class="col-md-8 mx-auto">
                     <form method="POST" action="index.php">
                         <div class="form-group">
@@ -44,19 +48,22 @@
                                 <option value="Mesin Cuci">Mesin Cuci</option>
                                 <option value="Rice Cooker">Rice Cooker</option>
                             </select>
-                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="jumlah">Jumlah Beli</label> 
-                            <input id="jumlah" name="jumlah" type="text" class="form-control">
-                        </div> 
-                        <div class="form-group">
-                            <button name="beli" type="submit" class="btn btn-primary">Beli</button>
-                            <button name="reset" type="reset" class="btn btn-warning">Reset</button>
-                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="jumlah">Jumlah Beli</label> 
+                        <input id="jumlah" name="jumlah" type="text" class="form-control">
+                    </div> 
+                    <div class="form-group">
+                        <button name="beli" type="submit" class="btn btn-primary">Beli</button>
+                        <button name="reset" type="reset" class="btn btn-warning">Reset</button>
+                    </div>
                     </form>
                 </div>
+                <!-- form -->
             </div>
+
+            <!-- daftar harga -->
             <div class="col-md-4 mx-auto px-4">
             <table class="table table-bordered table-sm mt-3">
                 <h3 align="center">Harga Produk</h3>
@@ -121,6 +128,7 @@
 				</tbody>
 			</table>
             </div>
+            <!-- daftar harga -->
         </div>
         
 	</div>
