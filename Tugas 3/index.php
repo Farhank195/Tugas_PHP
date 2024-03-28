@@ -79,8 +79,9 @@
                     <?php
                         $no = 1;
                         foreach ($array_mahasiswa as $mahasiswa) {
+                            //keterangan
                             $ket = ($mahasiswa['Nilai'] >= 65)? 'Lulus':'Tidak Lulus';
-
+                            
                             //grade
                             if($mahasiswa['Nilai'] >= 85 && $mahasiswa['Nilai'] <=100) {
                                 $grade = 'A';}
@@ -120,7 +121,7 @@
                         <td><?= $mahasiswa['Nama Mahasiswa'] ?></td>
                         <td class="text-center"><?= $mahasiswa['NIM'] ?></td>
                         <td class="text-center"><?= $mahasiswa['Nilai'] ?></td>
-                        <td class="text-center"><?= $ket ?></td>
+                        <td class="text-center" style="background-color: <?= $color?>"><?= $ket ?></td>
                         <td class="text-center"><?= $grade ?></td>
                         <td class="text-center"><?= $predikat ?></td>
                     </tr>
