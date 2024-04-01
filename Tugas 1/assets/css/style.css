@@ -70,20 +70,20 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  position: fixed;
+  position:sticky;
   top: 0;
   left: 0;
-  bottom: 0;
-  width: 300px;
+  right: 0;
+  width: 100%;
   transition: all ease-in-out 0.5s;
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #040b14;
-  overflow-y: auto;
+  /* background: #040b14; */
+  /* overflow-y: auto; */
 }
 
-#header .profile img {
+/* #header .profile img {
   margin: 15px auto;
   display: block;
   width: 120px;
@@ -98,7 +98,7 @@ h6 {
   -moz-text-align-last: center;
   text-align-last: center;
   font-family: "Poppins", sans-serif;
-}
+} */
 
 #header .profile h1 a,
 #header .profile h1 a:hover {
@@ -138,9 +138,9 @@ h6 {
 }
 
 @media (max-width: 1199px) {
-  #header {
+  /* #header {
     left: -300px;
-  }
+  } */
 
   #main {
     margin-left: 0;
@@ -1078,10 +1078,11 @@ section {
   padding: 15px;
   color: #f4f6fd;
   font-size: 14px;
-  position: fixed;
+  position:absolute;
   left: 0;
   bottom: 0;
-  width: 300px;
+  right: 0;
+  /* width: 300px; */
   z-index: 9999;
   background: #040b14;
 }
